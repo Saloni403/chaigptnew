@@ -1133,11 +1133,17 @@ opacity: 0;
    display: flex;
    align-items: center;
    justify-content: center;
-   opacity: 0;
+   opacity: 1;
    transition: 0.3s;
+}
+
+@media (min-width:992px) {
+  .ddiv i{
+   opacity: 0;
 }
 .cd:hover .ddiv i{
 opacity: 1;
+}
 }
 .addtocardbtn{
     padding: 0.5rem 0.75rem;
