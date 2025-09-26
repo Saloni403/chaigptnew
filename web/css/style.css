@@ -620,13 +620,13 @@ border-radius: 10px;
    transition: 0.5s;
    backdrop-filter: blur(10px);
 }
-.otonhome .container-fluid .col-6{
+.otonhome .container-fluid > div{
 width: fit-content;
 }
-.otonhome .container-fluid .col-6 > div:hover .otonhomediv1 {
+.otonhome .container-fluid > div:hover .otonhomediv1 {
 top: 0;
 }
-.otonhome .container-fluid .col-6 > div:hover .otonhomediv2 {
+.otonhome .container-fluid > div:hover .otonhomediv2 {
 bottom:0;
 }
 .otonhomediv1 a{
