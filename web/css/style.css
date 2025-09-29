@@ -181,7 +181,7 @@ header {
 }
 /* hero section */
 .herosec {
-  background-image: url(../images/heroimg.jpg);
+  background-image: url(../images/mainheroimg.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -691,6 +691,7 @@ bottom:0;
 .contactfrm .img1 {
   position: absolute;
   left: 0;
+  
   z-index: -1;
 }
 .contactfrm .img2 {
