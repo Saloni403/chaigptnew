@@ -46,11 +46,23 @@
     <section class="toppest">
       <span>Guardians of Pure Taste</span>
     </section>
-    <header class="py-1">
+    <header
+      style="
+        position: absolute;
+        background: linear-gradient(
+          to right,
+          rgb(3, 6, 15) 30%,
+          #090b159c,
+          #090b1561
+        );
+      "
+      class="py-1"
+    >
       <nav class="d-flex align-items-center justify-content-between">
         <div>
           <img
             src="web/images/IMG_1581.JPG"
+            class="clickable"
             width="100"
             onclick="location.href='index.html'"
             alt=""
@@ -65,8 +77,8 @@
               ></a>
               <ul class="sublist">
                 <li><a href="products.html">RETAIL</a></li>
-                <li><a href="form.html">LUXE EXPERIENCES</a></li>
-                <li><a href="404.html">FRANCHISE</a></li>
+                <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
+                 <li><a href="404.html">FRANCHISE</a></li>
               </ul>
             </li>
             <li><a href="ourteam.html">OUR GALLERY</a></li>
@@ -81,7 +93,7 @@
           </ul>
           <div class="d-lg-none mobileview">
             <i class="bi bi-list openmenu"></i>
-            <i class="bi bi-bag ms-3" onclick="location.href='cart.html'"></i>
+            <i class="bi bi-bag ms-3 clickable" onclick="location.href='cart.html'"></i>
           </div>
         </div>
       </nav>
@@ -93,21 +105,21 @@
       <div>
         <ul>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="">FRANCHISE</a></li>
+          <li><a href="404.html">FRANCHISE</a></li>
           <li><a href="products.html">RETAIL</a></li>
-          <li><a href="">LUXE EXPERIENCES</a></li>
-          <li><a href="">OUR GALLERY</a></li>
+          <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
+          <li><a href="ourteam.html">OUR GALLERY</a></li>
           <li><a href="aboutus.html">ABOUT US</a></li>
           <li><a href="contactus.html">CONTACT US</a></li>
           <li>
-            <a href=""><i class="bi bi-bag"></i> Cart</a>
+            <a href="cart.html"><i class="bi bi-bag"></i> Cart</a>
           </li>
           <li>
-            <a href=""><i class="bi bi-heart"></i> Wishlist</a>
+            <a href="wishlist.html"><i class="bi bi-heart"></i> Wishlist</a>
           </li>
-          <!-- <li>
-            <a href=""><i class="bi bi-person-circle"></i> My Profile</a>
-          </li> -->
+          <li>
+            <a href="loginprofile.html"><i class="bi bi-person-circle"></i> My Profile</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -117,7 +129,7 @@
       <div class="contactheroimg">
         <div>
           <p>Home / Services / Retail</p>
-          <h1 class="mt-5">Our Products</h1>
+          <h1 class="mt-5">Our Collection</h1>
         </div>
       </div>
     </section>
@@ -818,7 +830,7 @@
         <div class="row py-5">
           <div class="col-xl-3 mb-xl-0 mb-5">
             <div class="text-xl-start text-center">
-              <img src="web/images/IMG_1581.JPG" width="100" alt="" />
+              <img src="web/images/IMG_1581.JPG" class="clickable" onclick="location.href='index.html'" width="100" alt="" />
             </div>
           </div>
           <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
@@ -826,7 +838,7 @@
               <h4>Quick Links</h4>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Our Gallery</a></li>
+                <li><a href="ourteam.html">Our Gallery</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
               </ul>
@@ -836,9 +848,9 @@
             <div>
               <h4>Our Services</h4>
                <ul>
-                <li><a href="">Retail</a></li>
-                <li><a href="">Luxe Experiences</a></li>
-                <li><a href="">Franchise</a></li>
+                <li><a href="products.html">Retail</a></li>
+                <li><a href="index.html#ContactFormOnIndex">Luxe Experiences</a></li>
+                <li><a href="404.html">Franchise</a></li>
               </ul>
             </div>
           </div>
@@ -876,12 +888,13 @@
         </div>
       </div>
       <div class="cpy mt-5 py-3 px-1">
-        <a href=""
+        <a href="tssgtech.com"
           >Copyright © 2025 ChaiGPT. All rights reserved. Design by
           Tssg-Tech.</a
         >
       </div>
     </footer>
+
 
     <!-- product description page -->
     <section class="proddesc">

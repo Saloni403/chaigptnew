@@ -28,16 +28,27 @@
     <link rel="stylesheet" href="web/css/style.css" />
   </head>
 <body class="roboto-font">
-    <!-- toppest navbar -->
+   <!-- toppest navbar -->
     <section class="toppest">
       <span>Guardians of Pure Taste</span>
     </section>
-    <header class="py-1"
+    <header
+      style="
+        position: absolute;
+        background: linear-gradient(
+          to right,
+          rgb(3, 6, 15) 30%,
+          #090b159c,
+          #090b1561
+        );
+      "
+      class="py-1"
     >
       <nav class="d-flex align-items-center justify-content-between">
         <div>
           <img
             src="web/images/IMG_1581.JPG"
+            class="clickable"
             width="100"
             onclick="location.href='index.html'"
             alt=""
@@ -52,7 +63,7 @@
               ></a>
               <ul class="sublist">
                 <li><a href="products.html">RETAIL</a></li>
-                <li><a href="form.html">LUXE EXPERIENCES</a></li>
+                <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
                  <li><a href="404.html">FRANCHISE</a></li>
               </ul>
             </li>
@@ -68,7 +79,7 @@
           </ul>
           <div class="d-lg-none mobileview">
             <i class="bi bi-list openmenu"></i>
-            <i class="bi bi-bag ms-3" onclick="location.href='cart.html'"></i>
+            <i class="bi bi-bag ms-3 clickable" onclick="location.href='cart.html'"></i>
           </div>
         </div>
       </nav>
@@ -80,15 +91,21 @@
       <div>
         <ul>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="">FRANCHISE</a></li>
+          <li><a href="404.html">FRANCHISE</a></li>
           <li><a href="products.html">RETAIL</a></li>
-          <li><a href="">LUXE EXPERIENCES</a></li>
-          <li><a href="">OUR GALLERY</a></li>
+          <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
+          <li><a href="ourteam.html">OUR GALLERY</a></li>
           <li><a href="aboutus.html">ABOUT US</a></li>
           <li><a href="contactus.html">CONTACT US</a></li>
-          <li><a href=""><i class="bi bi-bag"></i> Cart</a></li>
-          <li><a href=""><i class="bi bi-heart"></i> Wishlist</a></li>
-          <!-- <li><a href=""><i class="bi bi-person-circle"></i> My Profile</a></li> -->
+          <li>
+            <a href="cart.html"><i class="bi bi-bag"></i> Cart</a>
+          </li>
+          <li>
+            <a href="wishlist.html"><i class="bi bi-heart"></i> Wishlist</a>
+          </li>
+          <li>
+            <a href="loginprofile.html"><i class="bi bi-person-circle"></i> My Profile</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -241,7 +258,7 @@
     </section>
 
     <!-- our blogs -->
-    <section class="ourblogs my-5">
+    <!-- <section class="ourblogs my-5">
       <div class="container-fluid">
         <div class="mb-5 text-center">
           <h1>The ChaiGPT™ Journal</h1>
@@ -384,88 +401,15 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- our team -->
-    <!-- <section class="ourteamm">
-        <div class="container mb-5 ">
-           <div class="mb-5 d-flex align-items-center justify-content-center flex-column">
-               <span class="mm">FOUNDER OF THE ChaiGPT</span>
-            <h1>Our Team</h1>
-            </div>
-            <div class="row gy-5 ">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div>
-                    <img src="web/images/teambox-2.jpg" class="img-fluid" alt="">
-                    <div class="otn">
-                    <span>Sumit Pal</span><br>
-                    <small>(Manager)</small>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section> -->
+    </section> -->
+   
     <!-- footer -->
     <footer class="">
       <div class="container-fluid">
         <div class="row py-5">
           <div class="col-xl-3 mb-xl-0 mb-5">
             <div class="text-xl-start text-center">
-              <img src="web/images/IMG_1581.JPG" width="100" alt="" />
+              <img src="web/images/IMG_1581.JPG" class="clickable" onclick="location.href='index.html'" width="100" alt="" />
             </div>
           </div>
           <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
@@ -473,7 +417,7 @@
               <h4>Quick Links</h4>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Our Gallery</a></li>
+                <li><a href="ourteam.html">Our Gallery</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
               </ul>
@@ -483,9 +427,9 @@
             <div>
               <h4>Our Services</h4>
                <ul>
-                <li><a href="">Retail</a></li>
-                <li><a href="">Luxe Experiences</a></li>
-                <li><a href="">Franchise</a></li>
+                <li><a href="products.html">Retail</a></li>
+                <li><a href="index.html#ContactFormOnIndex">Luxe Experiences</a></li>
+                <li><a href="404.html">Franchise</a></li>
               </ul>
             </div>
           </div>
@@ -523,12 +467,13 @@
         </div>
       </div>
       <div class="cpy mt-5 py-3 px-1">
-        <a href=""
+        <a href="tssgtech.com"
           >Copyright © 2025 ChaiGPT. All rights reserved. Design by
           Tssg-Tech.</a
         >
       </div>
     </footer>
+
 
     <script src="web/js/script.js"></script>
     <script src="web/js/product.js"></script>

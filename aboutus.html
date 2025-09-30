@@ -33,11 +33,23 @@
     <section class="toppest">
       <span>Guardians of Pure Taste</span>
     </section>
-    <header class="py-1">
-       <nav class="d-flex align-items-center justify-content-between">
+    <header
+      style="
+        position: absolute;
+        background: linear-gradient(
+          to right,
+          rgb(3, 6, 15) 30%,
+          #090b159c,
+          #090b1561
+        );
+      "
+      class="py-1"
+    >
+      <nav class="d-flex align-items-center justify-content-between">
         <div>
           <img
             src="web/images/IMG_1581.JPG"
+            class="clickable"
             width="100"
             onclick="location.href='index.html'"
             alt=""
@@ -52,7 +64,7 @@
               ></a>
               <ul class="sublist">
                 <li><a href="products.html">RETAIL</a></li>
-                <li><a href="form.html">LUXE EXPERIENCES</a></li>
+                <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
                  <li><a href="404.html">FRANCHISE</a></li>
               </ul>
             </li>
@@ -68,7 +80,7 @@
           </ul>
           <div class="d-lg-none mobileview">
             <i class="bi bi-list openmenu"></i>
-            <i class="bi bi-bag ms-3" onclick="location.href='cart.html'"></i>
+            <i class="bi bi-bag ms-3 clickable" onclick="location.href='cart.html'"></i>
           </div>
         </div>
       </nav>
@@ -80,19 +92,24 @@
       <div>
         <ul>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="">FRANCHISE</a></li>
+          <li><a href="404.html">FRANCHISE</a></li>
           <li><a href="products.html">RETAIL</a></li>
-          <li><a href="">LUXE EXPERIENCES</a></li>
-          <li><a href="">OUR GALLERY</a></li>
+          <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
+          <li><a href="ourteam.html">OUR GALLERY</a></li>
           <li><a href="aboutus.html">ABOUT US</a></li>
           <li><a href="contactus.html">CONTACT US</a></li>
-          <li><a href=""><i class="bi bi-bag"></i> Cart</a></li>
-          <li><a href=""><i class="bi bi-heart"></i> Wishlist</a></li>
-          <!-- <li><a href=""><i class="bi bi-person-circle"></i> My Profile</a></li> -->
+          <li>
+            <a href="cart.html"><i class="bi bi-bag"></i> Cart</a>
+          </li>
+          <li>
+            <a href="wishlist.html"><i class="bi bi-heart"></i> Wishlist</a>
+          </li>
+          <li>
+            <a href="loginprofile.html"><i class="bi bi-person-circle"></i> My Profile</a>
+          </li>
         </ul>
       </div>
     </div>
-
     <!-- about us -->
     
     <section>
@@ -186,7 +203,6 @@
         <h5>
             Handpicked Tea
         </h5>
-        <p>There are many variations of passages of Lorem Ipsum available.</p>
       </div>
                 </div>
             </div>
@@ -225,7 +241,6 @@
         <h5>
           Climate & Plastic Neutral
         </h5>
-        <p>There are many variations of passages of Lorem Ipsum available.</p>
       </div>
                 </div>
             </div>
@@ -289,7 +304,6 @@
         <h5>
             Packaged Fresh at the Source
         </h5>
-        <p>There are many variations of passages of Lorem Ipsum available.</p>
       </div>
                 </div>
             </div>
@@ -333,7 +347,6 @@
         <h5>
             Shipped Direct to Your Doorstep
         </h5>
-        <p>There are many variations of passages of Lorem Ipsum available.</p>
       </div>
                 </div>
             </div>
@@ -357,7 +370,7 @@
           <i class="bi bi-pin-angle-fill text-primary" ></i>
           <div class="visionfootdiv">
             <img src="web/images/mission (1).jpeg" class="img-fluid" alt="">
-            <div class="visionfoot bg-primary ">
+            <div class="visionfoot">
               <img src="web/images/telescope-svgrepo-com (2).svg" width="80" alt="">
               <div class="ms-sm-3">
                 <h6>VISION</h6>
@@ -370,7 +383,7 @@
           <i class="bi bi-pin-angle-fill text-warning"></i>
           <div class="visionfootdiv">
             <img src="web/images/mission (2).jpeg" class="img-fluid" alt="">
-            <div class="visionfoot bg-warning">
+            <div class="visionfoot">
               <img src="web/images/dart-mission-goal-success-svgrepo-com.svg" width="80" alt="">
               <div class="ms-sm-3">
                 <h6>MISSION</h6>
@@ -383,7 +396,7 @@
           <i class="bi bi-pin-angle-fill text-success"></i>
           <div class="visionfootdiv">
             <img src="web/images/mission (3).jpeg" class="img-fluid" alt="">
-            <div class="visionfoot bg-success">
+            <div class="visionfoot">
               <img src="web/images/experience-svgrepo-com.svg" width="80" alt="">
               <div class="ms-sm-3">
                 <h6>Experience</h6>
@@ -446,7 +459,7 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(1, 42, 1, 0.411);
+          background-color: rgba(1, 42, 1, 0.211);
           pointer-events: none; /* so clicks still pass to button */
         "
       ></div>
@@ -480,7 +493,7 @@
     <h1>Award Winning</h1>
   </div>
   <div class="row adrow gy-5">
-    <div class="col-sm-6 col-md-4 col-xl-3">
+     <div class="col-sm-6 col-md-4 ">
       <div class="addiv">
         <img src="web/images/award-decor.png" class="img-fluid ad1"  alt="">
         <img src="web/images/award_1.png" class="ad2 " alt="">
@@ -490,37 +503,7 @@
         <p>Lorem ipsum dolor sit.</p>
       </div>
     </div>
-     <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="addiv">
-        <img src="web/images/award-decor.png" class="img-fluid ad1"  alt="">
-        <img src="web/images/award_1.png" class="ad2 " alt="">
-      </div>
-      <div>
-        <p>2013</p>
-        <p>Lorem ipsum dolor sit.</p>
-      </div>
-    </div>
-     <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="addiv">
-        <img src="web/images/award-decor.png" class="img-fluid ad1"  alt="">
-        <img src="web/images/award_1.png" class="ad2 " alt="">
-      </div>
-      <div>
-        <p>2013</p>
-        <p>Lorem ipsum dolor sit.</p>
-      </div>
-    </div>
-     <div class="col-sm-6 col-md-4 col-xl-3">
-      <div class="addiv">
-        <img src="web/images/award-decor.png" class="img-fluid ad1"  alt="">
-        <img src="web/images/award_1.png" class="ad2 " alt="">
-      </div>
-      <div>
-        <p>2013</p>
-        <p>Lorem ipsum dolor sit.</p>
-      </div>
-    </div>
-     <div class="col-sm-6 col-md-4 col-xl-3">
+     <div class="col-sm-6 col-md-4 ">
       <div class="addiv">
         <img src="web/images/award-decor.png" class="img-fluid ad1"  alt="">
         <img src="web/images/award_1.png" class="ad2 " alt="">
@@ -534,13 +517,13 @@
   </div>
  </section>
 
-    <!-- footer -->
+   <!-- footer -->
     <footer class="">
       <div class="container-fluid">
         <div class="row py-5">
           <div class="col-xl-3 mb-xl-0 mb-5">
             <div class="text-xl-start text-center">
-              <img src="web/images/IMG_1581.JPG" width="100" alt="" />
+              <img src="web/images/IMG_1581.JPG" class="clickable" onclick="location.href='index.html'" width="100" alt="" />
             </div>
           </div>
           <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
@@ -548,7 +531,7 @@
               <h4>Quick Links</h4>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="">Our Gallery</a></li>
+                <li><a href="ourteam.html">Our Gallery</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
               </ul>
@@ -557,10 +540,10 @@
           <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
             <div>
               <h4>Our Services</h4>
-              <ul>
-                <li><a href="">Retail</a></li>
-                <li><a href="">Luxe Experiences</a></li>
-                <li><a href="">Franchise</a></li>
+               <ul>
+                <li><a href="products.html">Retail</a></li>
+                <li><a href="index.html#ContactFormOnIndex">Luxe Experiences</a></li>
+                <li><a href="404.html">Franchise</a></li>
               </ul>
             </div>
           </div>
@@ -598,12 +581,13 @@
         </div>
       </div>
       <div class="cpy mt-5 py-3 px-1">
-        <a href=""
+        <a href="tssgtech.com"
           >Copyright © 2025 ChaiGPT. All rights reserved. Design by
           Tssg-Tech.</a
         >
       </div>
     </footer>
+
     <script src="web/js/script.js"></script>
     <script src="web/js/indexservices.js"></script>
     <script
